@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #111111;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  height: 70px;
+  text-align: center;
+  color: #12b0e8;
+  margin-top: 20px;
+  border: solid #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+}
+
+.chatting-container {
+  background-color: #1e1e1e;
+  border: solid #e6e6e6;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  margin-top: 40px;
+  color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#message-container {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #383838;
+  border-radius: 20px;
+  visibility: hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #e1e1e1;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(196, 195, 195);
+}
+
+.send-message {
+  display: flex;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+}
+
+#form {
+  margin: auto;
+  width: 70%;
+  display: flex;
+}
+
+#input {
+  width: 90%;
+  padding: 7px;
+  outline: none;
+  border: 3px;
+}
+
+#button {
+  width: 8vw;
+  padding: 7px;
+  border-radius: 3px;
+  outline: none;
+  color: black;
+  background: #12b0e8;
+  border: #1e1e1e;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+#button:hover {
+  background: #51e1ed;
+}
+
+.each-message {
+  margin: 10px;
+}
+
+.each-message h2 {
+  font-size: 1rem;
+  color: white;
+}
+
+.message-text {
+  border-radius: 5px;
+  background: black;
+  height: auto;
+  padding: 10px 0;
+  padding-left: 5px;
+}
+
+.message-text h3 {
+  font-size: 0.8rem;
+}
