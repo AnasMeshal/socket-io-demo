@@ -1,4 +1,4 @@
-const socket = io("http://localhost:5000");
+const socket = io({ transports: ["websocket"], upgrade: false });
 
 //!DOM
 const parentDiv = document.getElementById("message-container");
